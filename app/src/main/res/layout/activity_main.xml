@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="#A91000" tools:context=".MainActivity">
+    <Button android:layout_height="wrap_content"
+        android:layout_width="fill_parent" android:id="@+id/bt"
+        android:text="EXIT" android:layout_y="520px"
+        android:textSize="20dip" android:textColor="@color/teal_200"
+        android:textStyle="bold"/>
+    <ViewFlipper android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:id="@+id/fill">
+    <TableLayout android:layout_width="fill_parent"
+        android:layout_height="500px" android:stretchColumns="0">
+    <TableRow> <ListView android:id="@+id/lll" android:textStyle="bold"
+            android:scrollbars="vertical" android:layout_width="fill_parent"
+            android:layout_height="270px" android:text="Contacts" />
+    </TableRow><TableRow> <Button
+                android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+                android:id="@+id/buttons" android:text="ADD"
+                android:textStyle="bold" android:textColor="@color/teal_200"/>
+        </TableRow> <TableRow> <Button
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent" android:id="@+id/buttons2"
+                android:text="DELETE" android:textStyle="bold"
+                android:textColor="@color/teal_200"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="3">
+        <TableRow >
+            <TextView android:layout_column="1"
+                android:text="ID"
+                android:padding="3dip"
+                />
+            <TextView android:id="@+id/tt2"
+                       android:textStyle="bold"
+                android:gravity="right"
+                android:padding="3dip"/>
+        </TableRow>
+        <TableRow >
+            <TextView android:layout_column="1"
+                android:text="NAME"
+                android:padding="3dip"
+                />
+            <TextView android:id="@+id/tt3"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:padding="3dip"/>
+        </TableRow>
+        <TableRow >
+            <TextView android:layout_column="1"
+                android:text="ADDRESS"
+                android:padding="3dip"
+                />
+            <TextView android:id="@+id/tt4"
+                android:textStyle="bold"
+                android:gravity="right"
+                android:padding="3dip"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_column="1"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/bt4"
+                android:layout_marginTop="180px"
+                android:text="BACK"
+                android:textStyle="bold"
+                android:textColor="#0000ff"/>
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+        <TableRow>
+            <TextView android:layout_column="1"
+                android:text="NAME"
+                android:padding="3dip"
+                />
+            <EditText android:id="@+id/ed"
+                android:layout_width="250px"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_column="1"
+                android:text="ADDRESS"
+                android:padding="3dip"
+                />
+            <EditText android:id="@+id/ed2"
+                android:layout_width="250px"
+                android:textStyle="bold"/>
+        </TableRow>
+        <TableRow>
+            <Button  android:layout_column="1"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/bt5"
+                android:text="BACK"
+                android:textStyle="bold"
+                android:textColor="#0000ff"/>
+            <Button
+                android:layout_column="1"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/bt6"
+                android:text="SAVE"
+                android:textStyle="bold"
+                android:textColor="#0000ff"/>
+        </TableRow>
+    </TableLayout>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+            <TableRow>
+                <EditText android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed3"
+                    android:background="@android:drawable/editbox_background"/>
+            </TableRow>
+            <TableRow>
+                <EditText android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ed4"
+                    android:background="@android:drawable/editbox_background"/>
+            </TableRow>
+        </TableLayout>
+
+
+</ViewFlipper>
+</AbsoluteLayout>
